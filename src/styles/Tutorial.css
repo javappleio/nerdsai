@@ -1,0 +1,115 @@
+.tutorial {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100svh;
+    z-index: 99999999;
+}
+
+.cursor {
+    position: fixed;
+    z-index: 9999999999;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    width: 100px;
+    border: 1px solid rgba(255,255,255,1);
+    height: 100px;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+.cursor p {
+    color: white;
+    font-size: 16px;
+}
+
+.tutorial video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.video_d {
+    display: initial;
+    z-index: 2;
+    z-index: 999999999;
+}
+
+.video_m {
+    display: none;
+    z-index: 2;
+    z-index: 999999999;
+}
+
+.btn_skip {
+    font-family: 'Satoshi Bold';
+    position: absolute;
+    bottom: 10svh;
+    cursor: pointer;
+    z-index: 9999999999;
+    background: none;
+    border: none;
+    color: white;
+    border: 1px solid white;
+    padding: 8px 40px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(8px);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.cursor_m {
+    z-index: 9999999999;
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 6svh;
+    width: 100px;
+    border: 1px solid rgba(255,255,255,1);
+    height: 100px;
+    color: white;
+    font-size: 16px;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+@media only screen and (max-width: 640px) {
+    .video_d,.cursor {
+        display: none;
+    }
+    
+    .video_m {
+        display: initial;
+    }
+
+    .cursor_m {
+        display: flex;
+    }
+}

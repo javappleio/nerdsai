@@ -1,0 +1,32 @@
+.legal {
+    width: 96%;
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 120px 20px 4svh;
+    position: relative;
+    color: white;
+}
+
+.legal h2 {
+    color: white;
+    font-size: 40px;
+    line-height: 100%;
+    padding-bottom: 40px;
+}
+
+.legal h5 {
+    color: white;
+    font-size: 20px;
+    line-height: 100%;
+    padding-bottom: 20px;
+}
+
+.legal p {
+    line-height: 150%;
+    padding-bottom: 40px;
+}

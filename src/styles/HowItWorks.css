@@ -1,0 +1,114 @@
+.hiw {
+    width: 100vw;
+    max-width: 1200px;
+    padding-top: 100px;
+    margin: auto;
+    position: relative;
+}
+
+.hiw_title {
+    color: white;
+    font-size: clamp(1.5rem, 1.0455rem + 1.4545vw, 2.5rem);
+    text-align: center;
+    font-family: 'Satoshi Bold'
+}
+
+.hiw_inner {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+}
+
+.hiw_accordion {
+    width: 40%;
+}
+
+.hiw_accordion_item {
+    background: transparent;
+    margin-bottom: 10px;
+    padding: 20px 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.hiw_accordion_item.show {
+    background: white;
+}
+
+.hiw_accordion_title {
+    cursor: pointer;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 28px;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.hiw_accordion_title.show {
+    color: black
+}
+
+.hiw_accordion_text {
+    color: black;
+    max-height: 0;
+    overflow: hidden;
+    padding-left: 40px;
+}
+
+.hiw_accordion_text.show {
+    height: auto;
+    max-height: 999px;
+}
+
+.hiw_image {
+    width: 48%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.hiw_nerd_character {
+    position: absolute;
+    bottom: -20px;
+    right: 42%;
+    width: 140px;
+}
+
+.hiw_nerd_character_2 {
+    position: absolute;
+    top: 0px;
+    right: 0%;
+    width: 140px;
+}
+
+@media only screen and (max-width: 640px) {
+    .hiw_inner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hiw_nerd_character {
+        right: 0;
+        width: 120px;
+    }
+    .hiw_nerd_character_2 {
+        top: initial;
+        bottom: 0;
+        right: 70%;
+        width: 120px;
+    }
+    .hiw_accordion, .hiw_image {
+        width: 96%;
+    }
+}

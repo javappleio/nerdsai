@@ -1,0 +1,123 @@
+.header {
+    width: 100%;
+    margin: auto;
+    position: fixed;
+    top: 10px;
+    padding-top: 10px;
+    z-index: 9999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_inner {
+    width: 90vw;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    background-color: rgba(0, 0, 0, 0);
+    transition: 0.3s;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.header_inner_active {
+    width: 90vw;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.header_logo {
+    height: 60px;
+}
+
+.header_menu {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.header_menu a {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.header_menuicon {
+    display: none;
+    cursor: pointer;
+}
+
+.header_resp {
+    display: none;
+}
+
+@media only screen and (max-width: 640px) {
+    .header_menu {
+        display: none;
+    }
+
+    .header_menuicon {
+        display: block;
+    }
+
+    .header_resp {
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        justify-content: start;
+        align-items: end;
+        gap: 20px;
+        top: 0;
+        right: -100vw;
+        width: 50vw;
+        height: 100svh;
+        z-index: 99999999;
+        background: #111827;
+        transition: 0.3s;
+        padding: 5svh 20px;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+}
+.header_resp_close {
+    margin-bottom: 40px;
+}
+    .header_resp_active {
+        right: 0 !important;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+}
+    .header_resp a {
+        color: white;
+    }
+}

@@ -1,0 +1,18 @@
+.n_background {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: url('../assets/fondo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 640px) {
+    .n_background {
+        background: url('../assets/fondo-movil.png');
+    }
+}

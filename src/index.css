@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'Satoshi';
+  src: url("./627a1045a798e61df645c8f9_Satoshi-Regular.ttf") format("truetype"),
+       url("./627a1045a798e61df645c8f9_Satoshi-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Satoshi Bold';
+  src: url("./627a1045a798e650a745c8f8_Satoshi-Bold.ttf") format("truetype"),
+       url("./627a1045a798e650a745c8f8_Satoshi-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Azo Sans';
+  src: url("./AzoSans-Bold.woff2") format("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Satoshi';
+  font-weight: 400 !important;
+  z-index: 1;
+}
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+  scroll-behavior: smooth;
+}
+
+html {
+  overflow-y: hidden;
+  background-color: black;
+}
+
+.innerDiv {
+  display: none;
+  position: relative;
+}
+
+a {
+  font-weight: 500;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.float_nerd {
+  animation: floating ease-in-out 3s both;
+  -webkit-animation: floating ease-in-out 3s infinite alternate;
+  z-index: -1;
+  position: relative;
+}
+
+.float_nerd_resp {
+  animation: floating ease-in-out 3s both;
+  -webkit-animation: floating ease-in-out 3s infinite alternate;
+  z-index: -1;
+  position: absolute;
+  display: none;
+}
+
+.float_nerd_blur_1 {
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  width: 60px;
+}
+
+.float_nerd_blur_1_front {
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  width: 60px;
+  z-index: 999 !important;
+}
+
+.float_nerd_blur_3 {
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  width: 50px;
+}
+
+.float_nerd_blur_6 {
+  filter: blur(6px);
+  -webkit-filter: blur(6px);
+  width: 30px;
+}
+
+@keyframes floating {
+  to {
+    transform: translateY(20px);
+    -webkit-transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    -o-transform: translateY(20px);
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .float_nerd {
+    display: none;
+  }
+  .float_nerd_resp {
+    display: block;
+  }
+}

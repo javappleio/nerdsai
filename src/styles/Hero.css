@@ -1,0 +1,226 @@
+.hero {
+    overflow: hidden;
+    width: 100%;
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 4svh;
+    position: relative;
+}
+
+.hero_h2 {
+    color: white;
+    font-size: clamp(2.125rem, 1.1023rem + 3.2727vw, 4.375rem);
+    line-height: 100%
+}
+
+.hero_h1 {
+    background: linear-gradient(90deg, #F861D8 0%, #9F2FFF 50%, #48B9FE 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-weight: bolder;
+    font-size: clamp(3.125rem, 1.9886rem + 3.6364vw, 5.625rem);
+    line-height: 100%
+}
+
+.hero_nerdsai {
+    width: 80vw;
+    max-width: 500px;
+}
+
+.hero_slogan {
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+.hero_promptdiv {
+    padding-top: 30px;
+}
+
+.hero_promptdiv_h4 {
+    color: white;
+    font-size: clamp(1.125rem, 0.9545rem + 0.5455vw, 1.5rem);
+    letter-spacing: 0.02em;
+    padding-bottom: 10px;
+}
+
+.hero_promptdiv_h5 {
+    color: white;
+    font-size: 1.125rem;
+    letter-spacing: 0.02em;
+    padding-bottom: 10px;
+}
+
+.hero_promptdiv input {
+    padding: 10px 16px;
+    width: 86vw;
+    font-size: clamp(0.875rem, 0.8182rem + 0.1818vw, 1rem);
+    text-align: center;
+    max-width: 750px;
+    color: #111827;
+    border: 1px solid #E2E2E2;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+
+.hero_prompts {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_prompt {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 1px solid #1F0E3B;
+    color: white;
+    font-size: clamp(0.875rem, 0.8182rem + 0.1818vw, 1rem);
+    font-weight: 600;
+    background: #1F0E3B;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.hero_prompt_disabled {
+    position: relative;
+    opacity: 0.4;
+    transition: 0.3s;
+    padding: 10px 20px;
+    border: 1px solid #1F0E3B;
+    color: white;
+    font-size: clamp(0.875rem, 0.8182rem + 0.1818vw, 1rem);
+    font-weight: 600;
+    background: #1F0E3B;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.hero_prompt:hover {
+    background: #FFFE00;
+    color: black;
+}
+
+.hero_prompt_first {
+    background: #FFFE00 !important;
+    border-color: #FFFE00 !important;
+    color: black;
+}
+
+.hero_promptshake_div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+
+.hero_promptshake_div_disabled {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.4;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.hero_promptshake_div_disabled .hero_promptshake {
+    cursor: not-allowed;
+}
+
+.hero_promptshake_div_disabled .hero_promptshake_nerd {
+    top: 0px !important;
+}
+
+.hero_promptshake {
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
+    font-family: 'Satoshi';
+    background: #1F0E3B;
+    color: white;
+    font-size: clamp(0.875rem, 0.8182rem + 0.1818vw, 1rem);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.hero_promptshake_div:hover .hero_promptshake {
+    background: #FFFE00;
+    color: black;
+}
+
+.hero_promptshake_nerd {
+    width: 60px;
+    position: absolute;
+    z-index: 2;
+    top: -16px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.hero_promptshake:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.hero_promptshake:hover + .hero_promptshake_nerd {
+    top: -30px;
+}
+
+@media only screen and (max-width: 640px) {
+    .hero_prompts {
+        gap: 10px;
+    }
+    .resp_dis {
+        display: none !important;
+    }
+}
