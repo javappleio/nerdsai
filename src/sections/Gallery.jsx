@@ -3,11 +3,11 @@ import '../styles/Gallery.css'
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 import '@splidejs/react-splide/css';
-import image1 from '../assets/portfolio_img_1.png'
-import image2 from '../assets/portfolio_img_2.png'
-import image3 from '../assets/portfolio_img_3.png'
-import image4 from '../assets/portfolio_img_4.png'
-import image5 from '../assets/portfolio_img_5.png'
+import image1 from '../assets/portfolio_img_1.jpg'
+import image2 from '../assets/portfolio_img_2.jpg'
+import image3 from '../assets/portfolio_img_3.jpg'
+import image4 from '../assets/portfolio_img_4.jpg'
+import image5 from '../assets/portfolio_img_5.jpg'
 import image6 from '../assets/portfolio_img_6.png'
 import image7 from '../assets/portfolio_img_7.png'
 import image8 from '../assets/portfolio_img_8.png'
